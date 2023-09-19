@@ -7,8 +7,7 @@ const SearchMovie = () => {
 
   const searchMovie = async (e) => {
     e.preventDefault();
-    const apiKey="d3d2087aece245a3e20278d186aa6d46";
-    const url = `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&language=en-US&query=${query}&page=1`;
+    const url = `https://api.themoviedb.org/3/search/movie?api_key=d3d2087aece245a3e20278d186aa6d46&language=en-US&query=${query}&page=1`;
 
     try {
       const response = await fetch(url);
